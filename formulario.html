@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Picolé</title>
+</head>
+<style>
+	body 
+    {
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+    }
+	.caixa_larga
+	{
+		width: 70%;
+	}
+	fieldset
+	{
+		width: 30%;
+	}
+	.botoes
+	{
+		width: 30%;
+		display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+	}
+	button
+	{
+		width: 120px;
+		height: 30px;
+		font-size: 15px;
+	}
+	button:hover
+	{
+		background-color: rgb(5, 114, 202);
+		color: white;
+	}
+</style>
+<body>
+	<fieldset>
+		<legend>Dados do Picolezinho</legend>
+		Descrição:
+		<input type="text" class="caixa_larga" id="descricao"><br><br>
+		Digite o preço:
+		<input type="text" class="caixa_larga" id="preco"><br><br>
+		Fornecedor:
+		<input type="text" class="caixa_larga" id="fornercedor"><br><br>
+		Quantidade:
+		<input type="number" class="caixa_larga" id="quantidade"><br><br>
+		Data do pedido:
+		<input type="date" id="data_pedido">
+	</fieldset><br><br>
+	<fieldset>
+		<legend>Sabor</legend>
+		Escolha um sabor: <br><br>
+		<input type="radio" name="sabores" id="pimenta">Pimenta
+		<input type="radio" name="sabores" id="cenoura">Cenoura
+		<input type="radio" name="sabores" id="uva">Uva
+		<input type="radio" name="sabores" id="morango">Morango
+		<br><br>
+		Selecione quais cores da embalagem:
+		<br>
+		<input type="checkbox" id="amarelo"> Amarelo
+		<input type="checkbox" id="verde"> Verde
+		<input type="checkbox" id="azul"> Azul
+		<br><br>
+		Selecione um estado para entrega:
+		<br>
+		<select id="estado">
+		<option>Amapá</option>
+		<option>Bahia</option>
+		<option>Paraná</option>
+		<option selected>Santa Catarina</option>
+	    </select>
+	</fieldset> <br>
+	<div class="botoes">
+		<button>Limpar</button>
+		<button>Enviar</button>
+	</div>
+</body>
+</html>
